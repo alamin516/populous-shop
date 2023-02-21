@@ -9,11 +9,11 @@ const CartItem = ({item}) => {
 
 
     return (
-        <div className='flex justify-between items-center py-3'>
-            <div className='lg:w-3/12 w-5/12 flex gap-2 items-center'>
-                <div className='lg:w-4/12 w-3/12'>
+        <div className='flex justify-between items-center p-2'>
+            <div className='lg:w-3/12 w-5/12 flex gap-2 items-center '>
+                <div className='lg:w-4/12 w-4/12'>
                     <figure>
-                        <img className='h-full' src={image} alt={name} />
+                        <img className='lg:h-[100px] h-[60px]' src={image} alt={name} />
                     </figure>
                 </div>
                 <div className='lg:w-8/12'>
@@ -27,7 +27,7 @@ const CartItem = ({item}) => {
                     </div>
                 </div>
             </div>
-            <div className='lg:w-2/12 lg:block hidden py-3 text-center font-bold'>
+            <div className='lg:w-2/12 lg:block hidden text-center font-bold'>
                 <p>
                     <FormatPrice price={price}></FormatPrice>
                 </p>
